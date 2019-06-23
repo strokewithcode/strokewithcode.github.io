@@ -1,2 +1,1 @@
-## Who are we?
-[Let's stroke](https://zq-jhon.github.io)
+## some links for showing

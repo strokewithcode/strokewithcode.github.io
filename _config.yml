@@ -5,10 +5,12 @@
 # Site
 title: stroke with code everyday
 subtitle:
-description: design,develope,devops!
+description: design🎨,develope💻,devops🖥!
 keywords: code,front-end,stroke
 author: strokeWithCode teams
-language: zh-CN
+language: 
+- zh-cn
+- en
 timezone:
 
 # URL

@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "private": true,
   "scripts": {
-    "preview": "hexo c && hexo s"
+    "preview": "hexo clean && hexo s"
   },
   "hexo": {
     "version": "3.9.0"

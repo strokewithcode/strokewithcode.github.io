@@ -20,6 +20,11 @@
         a.current(href="/links")= __('Links')					
       else
         a(href="/links")= __('Links')		
+    li
+      if is_current('join')
+        a.current(href="/join")= __('Join')
+      else
+        a(href="/join")= __('Join')
   .information
     .back_btn
       li
