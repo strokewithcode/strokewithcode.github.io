@@ -19,7 +19,7 @@ after_script:
   - git add .
   - git commit -m "Update Readme docs to static html with TRAVIS-CI."
   - git push --force --quiet "https://${stroke}@${GH_REF}" master:master
-# E: Build LifeCycle
+  # https://${ng}@${GH_REF}" master:master 第一个参数为 travis-cli 获取 token 的 key field, 第二个为你设置的仓库地址
 
 branches:
   only:
