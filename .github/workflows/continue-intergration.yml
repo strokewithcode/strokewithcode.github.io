@@ -9,17 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clean install dependencies and build
-        run: |
-          npm install -g hexo-cli
-          npm install
-          hexo g
-          cd ./public
-          git init
-          git config user.name "ZQ-jhon"
-          git config user.email "350037310@qq.com"
-          git add .
-          git commit -m "Update with Github Action."
-          git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+      run: |
+        sudo npm install -g hexo-cli
+        sudo npm install
+        sudo hexo g
+        sudo cd ./public
+        sudo git init
+        sudo git config user.name "ZQ-jhon"
+        sudo git config user.email "350037310@qq.com"
+        sudo git add .
+        sudo git commit -m "Update with Github Action."
+        sudo git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
     env: 
       githubAction: ${{ secrets.githubAction }}
     
