@@ -1,7 +1,8 @@
 {
-  "name": "hexo-site",
+  "name": "stroke-with-code",
   "version": "0.0.2",
   "private": true,
+  "homepage": "https://strokewithcode.github.io",
   "scripts": {
     "preview": "hexo clean && hexo s"
   },
@@ -10,7 +11,6 @@
   },
   "dependencies": {
     "hexo": "^3.9.0",
-    "hexo-all-minifier": "^0.5.3",
     "hexo-deployer-git": "^1.0.0",
     "hexo-generator-archive": "^0.1.5",
     "hexo-generator-category": "^0.1.3",
