@@ -19,7 +19,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: building-dist
       run: |
         npm install
         npx hexo g
@@ -29,9 +29,11 @@ jobs:
         git config user.email "350037310@qq.com"
         git add .
         git commit -m "Update Readme docs to static html with TRAVIS-CI."
-    - name: action-push
-      uses: ludeeus/action-push@0.0.1
-      env:
-        ACTION_MAIL: "350037310@qq.com"
-        ACTION_NAME: 'ZQ-jhon'
-        ACTION_BRANCH: 'master'
+    - name: push-bundle-to-masster
+      uses: ad-m/github-push-action@v0.5.0
+      with:
+        github_token: $\{{ secrets.GITHUB_TOKEN }}
+        repository: strokewithcode.github.io 
+        # Determines if force push is used
+        force: true
+
