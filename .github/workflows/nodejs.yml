@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v1
@@ -29,6 +29,5 @@ jobs:
         git config user.email "350037310@qq.com"
         git add .
         git commit -m "Update Readme docs to static html with TRAVIS-CI."
-        git push --force --quiet "https://${stroke}@${GH_REF}" master:master
-      env:
-        GH_REF: github.com/strokewithcode/strokewithcode.github.io.git
+        git push --force --quiet "https://${stroke}@github.com/strokewithcode/strokewithcode.github.io.git" master:master
+
