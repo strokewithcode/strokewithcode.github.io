@@ -19,7 +19,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git commit -m "Add changes" -a
+        git commit -m "Commit by github action" -a
     - name: 推送
       uses: ad-m/github-push-action@master
       with:
