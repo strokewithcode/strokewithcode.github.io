@@ -29,5 +29,9 @@ jobs:
         git config user.email "350037310@qq.com"
         git add .
         git commit -m "Update Readme docs to static html with TRAVIS-CI."
-        git push --force --quiet "https://${stroke}@github.com/strokewithcode/strokewithcode.github.io.git" master:master
-
+    - name: action-push
+      uses: ludeeus/action-push@0.0.1
+      env:
+        ACTION_MAIL: "350037310@qq.com"
+        ACTION_NAME: 'ZQ-jhon'
+        ACTION_BRANCH: 'master'
