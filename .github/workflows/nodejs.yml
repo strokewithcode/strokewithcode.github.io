@@ -31,4 +31,6 @@ jobs:
         git commit -m "Update Readme docs to static html with TRAVIS-CI."
     - name: Push to master
       uses: tcitry/push-to-master@v1.0
+      env:
+        GITHUB_TOKEN: ${{token}}
 
