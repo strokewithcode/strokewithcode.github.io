@@ -22,8 +22,7 @@ jobs:
         git add .
         git commit -m "Update with github action"
     - name: 推送
-      run: |
-        git push --force --quiet "https://${{secret.stroke}}@${{secret.thisRepo}}" master:master
+      run: git push --force --quiet "https://${{secret.stroke}}@${{secret.thisRepo}}" master:master
       env:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         
