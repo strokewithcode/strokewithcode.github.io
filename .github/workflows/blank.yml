@@ -23,5 +23,8 @@ jobs:
         git commit -m "Update with github action"
     - name: 推送
       run: |
+        git pull orgin master
         git push origin master
+      env:
+        github_token: ${{secret.GITHUB_TOKEN}}
         
