@@ -13,7 +13,7 @@ jobs:
       run: |
         npm install
         npx hexo g
-    - name: 提交
+    - name: 提交推送
       run: |
         cd ./public
         git init
@@ -21,8 +21,5 @@ jobs:
         git config user.email "350037310@qq.com"
         git add .
         git commit -m "Update with github action"
-    - name: 推送
-      run: git push --force --quiet "https://${{secrets.stroke}}@${{secrets.thisRepo}}" master:master
-      env:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        git push --force --quiet "https://${{secrets.stroke}}@${{secrets.thisRepo}}" master:master
         
