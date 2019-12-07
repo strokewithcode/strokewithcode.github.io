@@ -26,5 +26,5 @@ jobs:
         git pull orgin master
         git push origin master
       env:
-        github_token: ${{secret.GITHUB_TOKEN}}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         
