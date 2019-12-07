@@ -15,13 +15,13 @@ jobs:
         npx hexo g
     - name: 提交
       run: |
-        cd ./public
-        git init
-        git config --global user.email "action@github.com"
-        git config --global user.name "GitHub Action"
-        git add .
+      cd ./public
+      git init
+      git config user.name "ZQ-jhon"
+      git config user.email "350037310@qq.com"
+      git add .
+      git commit -m "Update Readme docs to static html with TRAVIS-CI."
     - name: 推送
-      uses: ad-m/github-push-action@master
+      run git push --force --quiet "https://${{secrets.stoke}}@${GH_REF}" master:master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
