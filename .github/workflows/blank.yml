@@ -20,7 +20,7 @@ jobs:
         git config user.name "ZQ-jhon"
         git config user.email "350037310@qq.com"
         git add .
-        git commit -m "Update Readme docs to static html with TRAVIS-CI."
+        git commit -m "Update with github action"
     - name: 推送
       run: |
         git push origin master
