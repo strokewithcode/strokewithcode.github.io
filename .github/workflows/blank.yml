@@ -22,6 +22,6 @@ jobs:
       git add .
       git commit -m "Update Readme docs to static html with TRAVIS-CI."
     - name: 推送
-      run git push --force --quiet "https://${{secrets.stoke}}@${GH_REF}" master:master
+      run git push --force --quiet "git@github.com:strokewithcode/strokewithcode.github.io.git" master:master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
