@@ -16,10 +16,11 @@ jobs:
     - name: 提交
       run: |
         cd ./public
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git init
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
         git add .
-        git commit -m "Commit by github action" -a
+        - cd ./public
     - name: 推送
       uses: ad-m/github-push-action@master
       with:
