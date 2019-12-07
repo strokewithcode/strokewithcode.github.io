@@ -23,7 +23,5 @@ jobs:
         git commit -m "Update Readme docs to static html with TRAVIS-CI."
     - name: 推送
       run: |
-        git remote add origin ${{secrets.thisRepo}}
-        git push --set-upstream origin master
-        git push
+        git push origin master
         
