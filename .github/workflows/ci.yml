@@ -20,6 +20,6 @@ jobs:
         git config user.name "ZQ-jhon"
         git config user.email "350037310@qq.com"
         git add .
-        git commit -m "Update with github action"
+        git commit -m "🤖Update with github action for continues intergration"
         git push --force --quiet "https://${{secrets.stroke}}@github.com/strokewithcode/strokewithcode.github.io.git" master:master
         
